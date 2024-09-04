@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Historical Sites</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Historical Sites Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="historical-site-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a country to visit"
+              autofocus
+              required
+              autocomplete="off"
+              class="countries"
+              id="user-countries"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Ethiopia, Israel, Paris</div>
+        </div>
+
+        <div class="historical-site hidden" id="historicalSite"></div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/MercyDej" target="_blank"> Mercy Mih </a>,
+        is
+        <a
+          href="https://github.com/MercyDej/french-poem-generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://french-poem-generator.vercel.app/" target="_blank"
+          >hosted on Vercel</a
+        >
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
